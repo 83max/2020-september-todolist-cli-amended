@@ -160,7 +160,6 @@
                 this.todoArrayShow.push(task);
 
 
-
                 localStorage.setItem("todoArrayShow", JSON.stringify(this.todoArrayShow));
             },
             sortTodos(item){
