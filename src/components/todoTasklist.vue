@@ -159,6 +159,13 @@
             addTodo(task){
                 this.todoArrayShow.push(task);
 
+                const arrayStringify = JSON.stringify(this.todoArrayShow);
+
+                const encode = btoa(arrayStringify);
+
+                const myUrl = new URL ("https://2020-september-todolist-cli-amended.vercel.app/");
+                myUrl.hash = encode;
+                window.location = myUrl;
 
                 localStorage.setItem("todoArrayShow", JSON.stringify(this.todoArrayShow));
             },
