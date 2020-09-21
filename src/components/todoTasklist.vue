@@ -163,7 +163,7 @@
 
                 const encode = btoa(arrayStringify);
 
-                const myUrl = new URL ("https://2020-september-todolist-cli-amended.vercel.app/");
+                const myUrl = new URL ("http://localhost:8080/");
                 myUrl.hash = encode;
                 window.location = myUrl;
 
